@@ -13,16 +13,15 @@ end
 
 vim.opt.rtp:prepend(vim.env.LAZY or lazypath)
 
-  require("lazy").setup({
+require("lazy").setup({
   -- stylua: ignore start
   spec = {
     { import = "sisy.editor.oil" },             -- file explorer
     { import = "sisy.editor.undotree" },             -- file explorer
 
-    --{ import = "sisy.ui.nord" },                -- color scheme
-    --{ import = "sisy.ui.catppuccin" },                -- color scheme
     { import = "sisy.ui.gruvbox" },                -- color scheme
     { import = "sisy.ui.statuscol" },                -- color scheme
+    { import = "sisy.ui.virt-column" },                -- color scheme
     { import = "sisy.ui.heirline" },                -- color scheme
 
     { import = "sisy.lsp.mason" },              -- mason
